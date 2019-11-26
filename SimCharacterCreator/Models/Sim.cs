@@ -94,6 +94,7 @@ namespace SimCharacterCreator.Models
             LeaderOfThePack
         }
 
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public AgeCategory Age { get; set; }
@@ -102,6 +103,7 @@ namespace SimCharacterCreator.Models
         public PersonalityTrait Trait2 { get; set; }
         public PersonalityTrait Trait3 { get; set; }
         public AspirationType Aspiration { get; set; }
+        public string ImageFileName { get; set; }
 
     }
 }

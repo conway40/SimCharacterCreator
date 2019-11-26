@@ -30,4 +30,12 @@ namespace SimCharacterCreator.Models
             return new ApplicationDbContext();
         }
     }
+    public class SimContext : DbContext
+    {
+        public SimContext() : base("SimContext")
+        {
+        }
+
+        public DbSet<Sim> Sims { get; set; }
+    }
 }
